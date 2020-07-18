@@ -1,3 +1,17 @@
+" coc extensions
+let g:coc_global_extensions = [
+      \ 'coc-snippets',
+      \ 'coc-json',
+      \ 'coc-tsserver',
+      \ 'coc-html',
+      \ 'coc-css',
+      \ 'coc-yaml',
+      \ 'coc-eslint',
+      \ 'coc-prettier',
+      \ 'coc-pairs',
+      \ 'coc-spell-checker',
+      \ ]
+
 " plugins
 call plug#begin(stdpath('data') . '/plugged')
 
