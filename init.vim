@@ -1,5 +1,10 @@
-source ~/.config/nvim/plugins.vim
-source ~/.config/nvim/mappings.vim
+if has('win32')
+  source ~/AppData/Local/nvim/plugins.vim
+  source ~/AppData/Local/nvim/mappings.vim
+else
+  source ~/.config/nvim/plugins.vim
+  source ~/.config/nvim/mappings.vim
+endif
 
 " config
 syntax on
