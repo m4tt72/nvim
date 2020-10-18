@@ -42,3 +42,6 @@ endfunction
 " NerdTree
 map <silent> <C-M> :NERDTreeFind <CR>
 map <silent> <C-N> :NERDTreeToggle <CR>
+
+" Save file as sudo when no sudo permissions
+cmap w!! w !sudo tee > /dev/null %

@@ -26,6 +26,7 @@ set gdefault
 set inccommand=split
 set splitbelow
 set cursorline
+set cursorcolumn
 set timeoutlen=1000 ttimeoutlen=0
 set fileformats=unix,dos,mac
 set showcmd
@@ -47,9 +48,6 @@ match ExtraWhitespace /\s\+$/
 
 " Automatically remove all trailing whitespace
 autocmd BufWritePre * %s/\s\+$//e
-
-" highlight current cursor line
-hi CursorLine cterm=NONE ctermbg=236 ctermfg=NONE
 
 " jump to last position
 if has("autocmd")
