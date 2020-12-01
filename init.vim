@@ -29,7 +29,7 @@ set cursorline
 set cursorcolumn
 set timeoutlen=1000 ttimeoutlen=0
 set fileformats=unix,dos,mac
-set encoding=utf-8
+set encoding=UTF-8
 set showcmd
 set noshowmode
 set hlsearch

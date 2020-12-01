@@ -10,6 +10,8 @@ let g:coc_global_extensions = [
       \ 'coc-prettier',
       \ 'coc-pairs',
       \ 'coc-spell-checker',
+      \ 'coc-yaml',
+      \ 'coc-emmet',
       \ ]
 
 " plugins
@@ -31,5 +33,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'easymotion/vim-easymotion'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
