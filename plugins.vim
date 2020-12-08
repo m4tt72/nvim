@@ -12,6 +12,7 @@ let g:coc_global_extensions = [
       \ 'coc-spell-checker',
       \ 'coc-yaml',
       \ 'coc-emmet',
+      \ 'coc-tailwindcss',
       \ ]
 
 " plugins

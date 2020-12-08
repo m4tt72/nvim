@@ -31,7 +31,7 @@ set timeoutlen=1000 ttimeoutlen=0
 set fileformats=unix,dos,mac
 set encoding=UTF-8
 set showcmd
-set cmdheight=2
+set cmdheight=1
 set noshowmode
 set hlsearch
 set sidescroll=6
