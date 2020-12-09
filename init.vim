@@ -1,9 +1,12 @@
+" if platform is windows
 if has('win32')
   source ~/AppData/Local/nvim/plugins.vim
   source ~/AppData/Local/nvim/mappings.vim
+  source ~/AppData/Local/nvim/coc-mappings.vim
 else
   source ~/.config/nvim/plugins.vim
   source ~/.config/nvim/mappings.vim
+  source ~/.config/nvim/coc-mappings.vim
 endif
 
 " config
@@ -49,7 +52,7 @@ else
   set signcolumn=yes
 endif
 
-" Theme
+" Theme (gruvbox)
 color gruvbox
 hi Normal ctermbg=NONE
 
