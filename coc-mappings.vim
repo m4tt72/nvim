@@ -34,6 +34,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nnoremap <silent> <Leader>g :<C-u>CocList diagnostics<CR>
 
 " Use H to show documentation in preview window.
 nnoremap <silent> H :call <SID>show_documentation()<CR>

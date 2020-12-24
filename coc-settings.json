@@ -26,5 +26,12 @@
 
   "html.format.enable": true,
   "html.autoClosingTags": true,
-  "html.filetypes": ["html", "handlebars", "hbs"]
+  "html.filetypes": [
+    "html",
+    "handlebars",
+    "hbs"
+  ],
+  "cSpell.userWords": [
+    "Readmore"
+  ]
 }

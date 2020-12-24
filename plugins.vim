@@ -35,5 +35,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'easymotion/vim-easymotion'
 Plug 'ryanoasis/vim-devicons'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
