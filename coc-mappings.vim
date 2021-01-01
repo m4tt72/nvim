@@ -60,8 +60,8 @@ function! s:show_hover_doc()
   call timer_start(500, 'ShowDocIfNoDiagnostic')
 endfunction
 
-autocmd CursorHoldI * silent call <SID>show_hover_doc()
-autocmd CursorHold * silent call <SID>show_hover_doc()
+"autocmd CursorHoldI * silent call <SID>show_hover_doc()
+"autocmd CursorHold * silent call <SID>show_hover_doc()
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
