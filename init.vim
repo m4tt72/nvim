@@ -24,7 +24,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set shortmess+=c
-set updatetime=300
+set updatetime=750
 set gdefault
 set inccommand=split
 set splitbelow

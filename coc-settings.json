@@ -24,14 +24,12 @@
   "prettier.semi": true,
   "prettier.bracketSpacing": true,
 
+  "javascript.suggest.autoImports": true,
+
+  "typescript.preferences.importModuleSpecifier": "relative",
+
   "html.format.enable": true,
   "html.autoClosingTags": true,
-  "html.filetypes": [
-    "html",
-    "handlebars",
-    "hbs"
-  ],
-  "cSpell.userWords": [
-    "Readmore"
-  ]
+  "html.filetypes": ["html", "handlebars", "hbs"],
+  "cSpell.userWords": ["Readmore", "fastify", "reqwest", "tmuxinator"]
 }
