@@ -32,11 +32,17 @@
   "html.autoClosingTags": true,
   "html.filetypes": ["html", "handlebars", "hbs"],
   "cSpell.userWords": [
+    "FLUIMASTER",
     "Fluicity",
     "Readmore",
+    "copyfiles",
     "fastify",
+    "middlewares",
     "persistor",
     "reqwest",
-    "tmuxinator"
+    "subreddit",
+    "tmuxinator",
+    "typegram",
+    "youtube"
   ]
 }

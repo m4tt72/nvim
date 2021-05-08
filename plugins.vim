@@ -1,18 +1,16 @@
 " coc extensions
 let g:coc_global_extensions = [
-      \ 'coc-snippets',
-      \ 'coc-json',
-      \ 'coc-tsserver',
-      \ 'coc-html',
       \ 'coc-css',
-      \ 'coc-yaml',
-      \ 'coc-eslint',
-      \ 'coc-prettier',
-      \ 'coc-pairs',
-      \ 'coc-spell-checker',
-      \ 'coc-yaml',
       \ 'coc-emmet',
-      \ 'coc-tailwindcss',
+      \ 'coc-eslint',
+      \ 'coc-html',
+      \ 'coc-json',
+      \ 'coc-pairs',
+      \ 'coc-prettier',
+      \ 'coc-snippets',
+      \ 'coc-spell-checker',
+      \ 'coc-tsserver',
+      \ 'coc-yaml',
       \ ]
 
 " plugins

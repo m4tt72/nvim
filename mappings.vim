@@ -21,6 +21,7 @@ nnoremap <C-H> <C-W><C-H>
 
 " fzf
 nnoremap <silent> <C-P> :Files<CR>
+nnoremap <silent> <C-O> :GFiles<CR>
 nnoremap <silent> <C-F> :Ag<CR>
 
 " NerdTree
