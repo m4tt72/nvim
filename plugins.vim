@@ -35,5 +35,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'pangloss/vim-javascript'
+Plug 'mustache/vim-mustache-handlebars'
 
 call plug#end()
