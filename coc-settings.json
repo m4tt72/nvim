@@ -38,6 +38,7 @@
     "copyfiles",
     "fastify",
     "middlewares",
+    "nestjs",
     "persistor",
     "reqwest",
     "subreddit",
