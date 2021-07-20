@@ -1,0 +1,3 @@
+[submodule "coc"]
+	path = coc
+	url = git@github.com:m4tt72/coc-config.git

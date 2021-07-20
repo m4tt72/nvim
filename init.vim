@@ -24,7 +24,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set shortmess+=c
-set updatetime=750
+set updatetime=300
 set gdefault
 set inccommand=split
 set splitbelow
@@ -85,6 +85,11 @@ let NERDTreeDirArrows = 1
 autocmd StdinReadPre * let s:std_in=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" && winnr('$') > 1 | b# | endif
+
+" utilsnips triggers
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " sessions management
 function! MakeSession()
