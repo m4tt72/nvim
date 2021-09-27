@@ -1,7 +1,7 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
-    "Markdown",
+    "markdown",
     "javascript",
     "javascriptreact",
     "json",
@@ -16,7 +16,6 @@
     "node_modules/**",
     ".git"
   ],
-
   "prettier.trailingComma": "all",
   "prettier.tabWidth": 2,
   "prettier.singleQuote": true,
@@ -34,11 +33,13 @@
   "cSpell.userWords": [
     "FLUIMASTER",
     "Fluicity",
+    "Formik",
     "Readmore",
     "copyfiles",
     "fastify",
     "middlewares",
     "nestjs",
+    "originalname",
     "persistor",
     "reqwest",
     "subreddit",

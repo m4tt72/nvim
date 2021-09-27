@@ -24,7 +24,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set shortmess+=c
-set updatetime=300
+set updatetime=750
 set gdefault
 set inccommand=split
 set splitbelow
@@ -55,6 +55,7 @@ endif
 " Theme (gruvbox)
 color gruvbox
 hi Normal ctermbg=NONE
+autocmd vimenter * ++nested colorscheme gruvbox
 
 " highlight trailing spaces
 hi ExtraWhitespace ctermbg=1 guibg=1
