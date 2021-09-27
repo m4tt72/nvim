@@ -15,9 +15,8 @@ filetype plugin indent on
 set autoread
 set hidden
 set nobackup
-set number rnu
+set number
 set nowritebackup
-set relativenumber
 set smarttab
 set cindent
 set tabstop=2
@@ -42,6 +41,8 @@ set confirm
 set autowriteall
 set t_Co=256
 set list!
+set ttyfast
+set lazyredraw
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
