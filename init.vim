@@ -56,8 +56,8 @@ endif
 " Theme (gruvbox)
 color gruvbox
 let g:gruvbox_contrast_dark='hard'
-hi Normal ctermbg=NONE
 autocmd vimenter * ++nested colorscheme gruvbox
+autocmd VimEnter * hi Normal ctermbg=none
 
 " highlight trailing spaces
 hi ExtraWhitespace ctermbg=1 guibg=1
