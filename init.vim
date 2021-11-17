@@ -55,6 +55,7 @@ endif
 
 " Theme (gruvbox)
 color gruvbox
+let g:gruvbox_contrast_dark='hard'
 hi Normal ctermbg=NONE
 autocmd vimenter * ++nested colorscheme gruvbox
 
