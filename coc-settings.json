@@ -6,7 +6,7 @@
     "javascriptreact",
     "json",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
   ],
   "cSpell.language": "en",
   "cSpell.ignorePaths": [
@@ -31,8 +31,6 @@
   "html.autoClosingTags": true,
   "html.filetypes": ["html", "handlebars", "hbs"],
   "cSpell.userWords": [
-    "FLUIMASTER",
-    "Fluicity",
     "Formik",
     "Readmore",
     "copyfiles",
