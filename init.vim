@@ -43,6 +43,7 @@ set t_Co=256
 set list!
 set ttyfast
 set lazyredraw
+set mouse=a
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
