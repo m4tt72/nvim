@@ -10,8 +10,8 @@ nnoremap <silent> <Leader>p :bp<CR>
 nnoremap <silent> <Leader>d :bd<CR>
 
 " splits
-nnoremap <silent> <Leader>" :vsp <CR>
-nnoremap <silent> <Leader>% :sp <CR>
+nnoremap <silent> <Leader>+ :vsp <CR>
+nnoremap <silent> <Leader>- :sp <CR>
 
 " cycle between splits using ctrl+hjkl
 nnoremap <C-J> <C-W><C-J>
@@ -19,10 +19,11 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" fzf
-nnoremap <silent> <C-P> :Files<CR>
-nnoremap <silent> <C-O> :GFiles<CR>
-nnoremap <silent> <C-F> :Ag<CR>
+" Telescope
+nnoremap <silent> <C-O> <cmd>Telescope find_files<cr>
+nnoremap <silent> <C-F> <cmd>Telescope live_grep<cr>
+nnoremap <silent> <C-B> <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " NerdTree
 map <silent> <C-M> :NERDTreeFind <CR>

@@ -44,5 +44,6 @@
     "tmuxinator",
     "typegram",
     "youtube"
-  ]
+  ],
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snippets"
 }
