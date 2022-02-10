@@ -7,6 +7,7 @@ syntax on
 filetype plugin indent on
 set autoread
 set hidden
+set noswapfile
 set nobackup
 set number
 set nowritebackup
@@ -17,36 +18,32 @@ set shiftwidth=2
 set expandtab
 set shortmess+=c
 set updatetime=300
-set gdefault
 set inccommand=split
 set splitbelow
 set cursorline
 set cursorcolumn
-set timeoutlen=1000 ttimeoutlen=0
 set fileformats=unix,dos,mac
 set encoding=UTF-8
 set showcmd
-set cmdheight=1
+set cmdheight=2
 set noshowmode
 set hlsearch
 set sidescroll=6
 set confirm
 set autowriteall
-set t_Co=256
 set list!
-set ttyfast
 set lazyredraw
 set mouse=a
 set undofile
-
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+set clipboard+="unnamedplus"
+set conceallevel=0
+set scrolloff=8
+set ignorecase
+set smartcase
+set timeoutlen=1000
+set numberwidth=4
+set nowrap
+set signcolumn=yes
 
 " Theme (gruvbox)
 color gruvbox
@@ -88,28 +85,3 @@ autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" && winnr('$') > 1 | b# | en
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-" sessions management
-function! MakeSession()
-  let b:sessiondir = stdpath('data') . '/sessions' . getcwd()
-  if (filewritable(b:sessiondir) != 2)
-    exe 'silent !mkdir -p ' b:sessiondir
-    redraw!
-  endif
-  let b:filename = b:sessiondir . '/session.vim'
-  exe "mksession! " . b:filename
-endfunction
-
-function! LoadSession()
-  let b:sessiondir = stdpath('data') . '/sessions' . getcwd()
-  let b:sessionfile = b:sessiondir . "/session.vim"
-  if (filereadable(b:sessionfile))
-    exe 'source ' b:sessionfile
-  else
-    echo "No session loaded."
-  endif
-endfunction
-
-" Adding automatons for when entering or leaving Vim
-au VimEnter * nested :call LoadSession()
-au VimLeave * :call MakeSession()
