@@ -1,13 +1,6 @@
-" if platform is windows
-if has('win32')
-  source ~/AppData/Local/nvim/plugins.vim
-  source ~/AppData/Local/nvim/mappings.vim
-  source ~/AppData/Local/nvim/coc-mappings.vim
-else
-  source ~/.config/nvim/plugins.vim
-  source ~/.config/nvim/mappings.vim
-  source ~/.config/nvim/coc-mappings.vim
-endif
+source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/mappings.vim
+source ~/.config/nvim/coc-mappings.vim
 
 " config
 syntax on
@@ -75,6 +68,7 @@ endif
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='gruvbox'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " Coc Config
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
