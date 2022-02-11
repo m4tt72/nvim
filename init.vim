@@ -45,6 +45,7 @@ set signcolumn=yes
 
 " folding
 set foldmethod=syntax
+set nofoldenable
 
 " Theme (gruvbox)
 color gruvbox
