@@ -33,7 +33,6 @@ set confirm
 set autowriteall
 set list!
 set lazyredraw
-set mouse=a
 set undofile
 set clipboard+="unnamedplus"
 set conceallevel=0

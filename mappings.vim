@@ -5,8 +5,8 @@ let mapleader = " "
 nmap <silent> <Leader>l :nohlsearch<CR>
 
 " buffers
-nnoremap <silent> <Leader>n :bn<CR>
-nnoremap <silent> <Leader>p :bp<CR>
+nnoremap <silent> <Leader>] :bn<CR>
+nnoremap <silent> <Leader>[ :bp<CR>
 nnoremap <silent> <Leader>d :bd<CR>
 
 " splits
@@ -39,6 +39,14 @@ inoremap <C-j> <esc>:m .+1<CR>==
 inoremap <C-k> <esc>:m .-2<CR>==
 nnoremap <leader>j :m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
+
+" greatest remap ever
+xnoremap <leader>p "+p
+
+" next greatest remap ever
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+nnoremap <leader>Y gg"+yG
 
 " FZF
 nnoremap <silent> <C-O> <cmd>:Files<cr>
