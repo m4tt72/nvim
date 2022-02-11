@@ -19,7 +19,28 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Telescope
+" keep cursor centered when browsing search
+nnoremap n nzz
+nnoremap N Nzz
+
+" prevent undo from removing everything
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap [ [<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+inoremap { {<c-g>u
+inoremap = =<c-g>u
+
+" moving lines, selection in all modes
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+inoremap <C-j> <esc>:m .+1<CR>==
+inoremap <C-k> <esc>:m .-2<CR>==
+nnoremap <leader>j :m .+1<CR>==
+nnoremap <leader>k :m .-2<CR>==
+
+" FZF
 nnoremap <silent> <C-O> <cmd>:Files<cr>
 nnoremap <silent> <C-F> <cmd>:Rg<cr>
 nnoremap <silent> <C-B> <cmd>:Buffers<cr>

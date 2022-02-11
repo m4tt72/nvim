@@ -10,6 +10,7 @@ set hidden
 set noswapfile
 set nobackup
 set number
+set relativenumber
 set nowritebackup
 set smarttab
 set cindent
@@ -22,7 +23,6 @@ set inccommand=split
 set splitbelow
 set cursorline
 set cursorcolumn
-set fileformats=unix,dos,mac
 set encoding=UTF-8
 set showcmd
 set cmdheight=2
@@ -42,14 +42,16 @@ set ignorecase
 set smartcase
 set timeoutlen=1000
 set numberwidth=4
-set nowrap
 set signcolumn=yes
+
+" folding
+set foldmethod=syntax
 
 " Theme (gruvbox)
 color gruvbox
 let g:gruvbox_contrast_dark='hard'
 autocmd vimenter * ++nested colorscheme gruvbox
-autocmd VimEnter * hi Normal ctermbg=none
+autocmd vimenter * hi Normal ctermbg=none
 
 " highlight trailing spaces
 hi ExtraWhitespace ctermbg=1 guibg=1
@@ -108,5 +110,5 @@ function! LoadSession()
 endfunction
 
 " Adding automatons for when entering or leaving Vim
-au VimEnter * nested :call LoadSession()
-au VimLeave * :call MakeSession()
+au vimenter * nested :call LoadSession()
+au vimleave * :call MakeSession()
