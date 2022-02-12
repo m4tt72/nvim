@@ -57,5 +57,8 @@ nnoremap <silent> <C-B> <cmd>:Buffers<cr>
 map <silent> <C-M> :NERDTreeFind <CR>
 map <silent> <C-N> :NERDTreeToggle <CR>
 
+" git stuff
+nmap <leader>gs :G<CR>
+
 " Save file as sudo when no sudo permissions
 cmap w!! w !sudo tee > /dev/null %
