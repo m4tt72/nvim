@@ -4,11 +4,7 @@ if not status_ok then
 end
 
 configs.setup {
-  ensure_installed = {
-    "javascript",
-    "typescript",
-    "json"
-  },
+  ensure_installed = "maintained",
   sync_install = false,
   ignore_install = { "" },
   autopairs = {

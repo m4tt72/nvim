@@ -37,36 +37,33 @@ packer.init {
 
 return packer.startup(function(use)
   -- plugins here
-  use 'wbthomason/packer.nvim'
-  use 'nvim-lua/popup.nvim'
-  use 'nvim-lua/plenary.nvim'
-  use 'gruvbox-community/gruvbox'
+  use 'L3MON4D3/LuaSnip'
   use 'airblade/vim-gitgutter'
-  use 'tpope/vim-fugitive'
-  use 'tpope/vim-surround'
-  use 'tpope/vim-commentary'
-  use 'lewis6991/impatient.nvim'
-  use 'nvim-lualine/lualine.nvim'
   use 'akinsho/bufferline.nvim'
-  use 'nvim-telescope/telescope.nvim'
-  use 'kyazdani42/nvim-web-devicons'
-  use 'windwp/nvim-autopairs'
-  use 'hrsh7th/nvim-cmp'
+  use 'gruvbox-community/gruvbox'
   use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/cmp-nvim-lsp'
-  use 'saadparwaiz1/cmp_luasnip'
-  use 'L3MON4D3/LuaSnip'
-  use 'neovim/nvim-lspconfig'
-  use 'williamboman/nvim-lsp-installer'
-  use 'tamago324/nlsp-settings.nvim'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/nvim-cmp'
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'kyazdani42/nvim-tree.lua'
-  use {
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  }
+  use 'kyazdani42/nvim-web-devicons'
+  use 'lewis6991/impatient.nvim'
+  use 'neovim/nvim-lspconfig'
+  use 'nvim-lua/plenary.nvim'
+  use 'nvim-lua/popup.nvim'
+  use 'nvim-lualine/lualine.nvim'
+  use 'nvim-telescope/telescope.nvim'
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'tamago324/nlsp-settings.nvim'
+  use 'tpope/vim-commentary'
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-surround'
+  use 'wbthomason/packer.nvim'
+  use 'williamboman/nvim-lsp-installer'
+  use 'windwp/nvim-autopairs'
+  use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()

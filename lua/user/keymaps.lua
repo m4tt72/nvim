@@ -53,7 +53,8 @@ keymap("i", "{", "{<c-g>u", opts)
 keymap("i", "=", "=<c-g>u", opts)
 
 -- telescope
-keymap("n", "<C-o>", ":Telescope find_files <CR>", opts)
+keymap("n", "<C-p>", ":Telescope find_files <CR>", opts)
+keymap("n", "<C-o>", ":Telescope oldfiles <CR>", opts)
 keymap("n", "<C-f>", ":Telescope live_grep <CR>", opts)
 keymap("n", "<C-b>", ":Telescope buffers <CR>", opts)
 
