@@ -37,25 +37,21 @@ packer.init {
 
 return packer.startup(function(use)
   -- plugins here
-  use "wbthomason/packer.nvim"
-  use "nvim-lua/popup.nvim"
-  use "nvim-lua/plenary.nvim"
-  use "gruvbox-community/gruvbox"
-  use "airblade/vim-gitgutter"
-  use "tpope/vim-fugitive"
-  use "tpope/vim-surround"
-  use "tpope/vim-commentary"
-  use "vim-airline/vim-airline"
-  use "vim-airline/vim-airline-themes"
-  use {
-    'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
-  }
+  use 'wbthomason/packer.nvim'
+  use 'nvim-lua/popup.nvim'
+  use 'nvim-lua/plenary.nvim'
+  use 'gruvbox-community/gruvbox'
+  use 'airblade/vim-gitgutter'
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-surround'
+  use 'tpope/vim-commentary'
+  use 'lewis6991/impatient.nvim'
+  use 'nvim-lualine/lualine.nvim'
+  use 'akinsho/bufferline.nvim'
+  use 'nvim-telescope/telescope.nvim'
+  use 'kyazdani42/nvim-web-devicons'
   use {
     'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
-    },
     config = function() require'nvim-tree'.setup {} end
   }
   use {

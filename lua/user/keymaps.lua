@@ -18,8 +18,8 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- buffers
-keymap("n", "<leader>]", ":bn <CR>", opts)
-keymap("n", "<leader>[", ":bp <CR>", opts)
+keymap("n", "<leader>n", ":bn <CR>", opts)
+keymap("n", "<leader>p", ":bp <CR>", opts)
 keymap("n", "<leader>d", ":bd <CR>", opts)
 
 -- splits
@@ -51,12 +51,6 @@ keymap("i", "!", "!<c-g>u", opts)
 keymap("i", "?", "?<c-g>u", opts)
 keymap("i", "{", "{<c-g>u", opts)
 keymap("i", "=", "=<c-g>u", opts)
-
--- copy/paste from system clipboard
-keymap("x", "<leader>p", "\"+p", opts)
-keymap("v", "<leader>y", "\"+y", opts)
-keymap("n", "<leader>y", "\"+y", opts)
-keymap("n", "<leader>Y", "gg\"+yG", opts)
 
 -- telescope
 keymap("n", "<C-o>", ":Telescope find_files <CR>", opts)
