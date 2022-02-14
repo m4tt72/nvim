@@ -50,13 +50,29 @@ return packer.startup(function(use)
   use 'akinsho/bufferline.nvim'
   use 'nvim-telescope/telescope.nvim'
   use 'kyazdani42/nvim-web-devicons'
+  use 'windwp/nvim-autopairs'
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'L3MON4D3/LuaSnip'
+  use 'neovim/nvim-lspconfig'
+  use 'williamboman/nvim-lsp-installer'
+  use 'tamago324/nlsp-settings.nvim'
+  use 'jose-elias-alvarez/null-ls.nvim'
   use {
     'kyazdani42/nvim-tree.lua',
     config = function() require'nvim-tree'.setup {} end
   }
+  -- use {
+  --   'neoclide/coc.nvim',
+  --   branch = 'release'
+  -- }
   use {
-    'neoclide/coc.nvim',
-    branch = 'release'
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
   }
 
   if PACKER_BOOTSTRAP then

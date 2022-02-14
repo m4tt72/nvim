@@ -1,11 +1,9 @@
-vim.cmd "source ~/.config/nvim/vim/coc.vim"
 vim.g['coc_global_extensions'] = {
   'coc-css',
   'coc-emmet',
   'coc-eslint',
   'coc-html',
   'coc-json',
-  'coc-pairs',
   'coc-prettier',
   'coc-snippets',
   'coc-spell-checker',
@@ -14,3 +12,5 @@ vim.g['coc_global_extensions'] = {
   'coc-tailwindcss',
   'coc-lua'
 }
+
+vim.cmd "source ~/.config/nvim/vim/coc.vim"
