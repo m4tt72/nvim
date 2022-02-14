@@ -1,4 +1,4 @@
-vim.cmd "source ~/.config/nvim/lua/user/config/coc.vim"
+vim.cmd "source ~/.config/nvim/vim/coc.vim"
 vim.g['coc_global_extensions'] = {
   'coc-css',
   'coc-emmet',
