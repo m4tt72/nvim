@@ -32,7 +32,6 @@ set sidescroll=6
 set confirm
 set autowriteall
 set list!
-set lazyredraw
 set undofile
 set clipboard+="unnamedplus"
 set conceallevel=0
