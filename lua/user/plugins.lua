@@ -62,6 +62,7 @@ return packer.startup(function(use)
   use 'tpope/vim-surround'
   use 'wbthomason/packer.nvim'
   use 'williamboman/nvim-lsp-installer'
+  use 'goolord/alpha-nvim'
   use 'windwp/nvim-autopairs'
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 
