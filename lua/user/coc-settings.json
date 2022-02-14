@@ -6,7 +6,7 @@
     "javascriptreact",
     "json",
     "typescript",
-    "typescriptreact",
+    "typescriptreact"
   ],
   "cSpell.language": "en",
   "cSpell.ignorePaths": [
@@ -22,11 +22,8 @@
   "prettier.printWidth": 80,
   "prettier.semi": true,
   "prettier.bracketSpacing": true,
-
   "javascript.suggest.autoImports": true,
-
   "typescript.preferences.importModuleSpecifier": "relative",
-
   "html.format.enable": true,
   "html.autoClosingTags": true,
   "html.filetypes": ["html", "handlebars", "hbs"],
