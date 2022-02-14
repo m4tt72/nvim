@@ -62,14 +62,7 @@ return packer.startup(function(use)
   use 'williamboman/nvim-lsp-installer'
   use 'tamago324/nlsp-settings.nvim'
   use 'jose-elias-alvarez/null-ls.nvim'
-  use {
-    'kyazdani42/nvim-tree.lua',
-    config = function() require'nvim-tree'.setup {} end
-  }
-  -- use {
-  --   'neoclide/coc.nvim',
-  --   branch = 'release'
-  -- }
+  use 'kyazdani42/nvim-tree.lua'
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
