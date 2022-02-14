@@ -11,6 +11,5 @@ null_ls.setup({
 	sources = {
 		formatting.prettier,
     diagnostics.eslint,
-    diagnostics.cspell,
 	},
 })
