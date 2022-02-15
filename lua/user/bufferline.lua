@@ -19,7 +19,7 @@ bufferline.setup {
     max_name_length = 30,
     max_prefix_length = 30,
     tab_size = 16,
-    diagnostics = "nvim_lsp",
+    diagnostics = "coc",
     diagnostics_update_in_insert = false,
     offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
     show_buffer_icons = true,
