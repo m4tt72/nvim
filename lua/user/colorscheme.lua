@@ -12,8 +12,7 @@ else
     let g:gruvbox_contrast_dark='hard'
     autocmd vimenter * ++nested colorscheme gruvbox
     autocmd vimenter * hi Normal ctermbg=none
-
-    hi ExtraWhitespace ctermbg=red guibg=red
+    hi ExtraWhitespace ctermbg=1 guibg=1
     match ExtraWhitespace /\s\+$/
   ]]
 end

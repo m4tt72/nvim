@@ -37,33 +37,21 @@ packer.init {
 
 return packer.startup(function(use)
   -- plugins here
-  use 'L3MON4D3/LuaSnip'
   use 'airblade/vim-gitgutter'
   use 'akinsho/bufferline.nvim'
   use 'gruvbox-community/gruvbox'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/nvim-cmp'
-  use 'jose-elias-alvarez/null-ls.nvim'
-  use 'kyazdani42/nvim-tree.lua'
+  use { 'kyazdani42/nvim-tree.lua', commit="3f4ed9b6c2598ab8304186486a0" }
   use 'kyazdani42/nvim-web-devicons'
   use 'lewis6991/impatient.nvim'
-  use 'neovim/nvim-lspconfig'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-lua/popup.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-telescope/telescope.nvim'
-  use 'saadparwaiz1/cmp_luasnip'
-  use 'tamago324/nlsp-settings.nvim'
   use 'tpope/vim-commentary'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
   use 'wbthomason/packer.nvim'
-  use 'williamboman/nvim-lsp-installer'
-  use 'goolord/alpha-nvim'
-  use 'windwp/nvim-autopairs'
+  use { 'neoclide/coc.nvim', branch = 'release' }
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 
   if PACKER_BOOTSTRAP then

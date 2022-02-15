@@ -57,9 +57,3 @@ keymap("n", "<C-p>", ":Telescope find_files <CR>", opts)
 keymap("n", "<C-o>", ":Telescope oldfiles <CR>", opts)
 keymap("n", "<C-f>", ":Telescope live_grep <CR>", opts)
 keymap("n", "<C-b>", ":Telescope buffers <CR>", opts)
-
--- coc
-keymap("n", "gd", "<Plug>(coc-definition)", opts)
-keymap("n", "gy", "<Plug>(coc-type-definition)", opts)
-keymap("n", "gi", "<Plug>(coc-implementation)", opts)
-keymap("n", "gi", "<Plug>(coc-references)", opts)
