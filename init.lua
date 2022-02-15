@@ -6,7 +6,7 @@ require "user.nvim-tree"
 require "user.telescope"
 require "user.impatient"
 require "user.lualine"
-require "user.bufferline"
+-- require "user.bufferline"
 require "user.treesitter"
 
 vim.cmd "source ~/.config/nvim/coc/config.vim"

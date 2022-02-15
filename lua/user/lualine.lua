@@ -9,8 +9,8 @@ end
 
 local diagnostics = {
 	"diagnostics",
-	sources = { "nvim_diagnostic" },
-	sections = { "error", "warn" },
+	sources = { "nvim_diagnostic", 'coc' },
+	sections = { "error", "warn", "info", "hint" },
 	symbols = { error = " ", warn = " " },
 	colored = false,
 	update_in_insert = false,
@@ -48,6 +48,18 @@ local location = {
 	padding = 0,
 }
 
+local filename = {
+  'filename',
+  file_status = true,
+  path = 1,
+  shorting_target = 40,
+  symbols = {
+    modified = '[+]',
+    readonly = '[ro]',
+    unnamed = '[No Name]'
+  }
+}
+
 -- cool function for progress
 local progress = function()
 	local current_line = vim.fn.line(".")
@@ -74,7 +86,7 @@ lualine.setup({
 	sections = {
 		lualine_a = { branch, diagnostics },
 		lualine_b = { mode },
-		lualine_c = {},
+		lualine_c = { filename },
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { diff, spaces, "encoding", filetype },
 		lualine_y = { location },
@@ -88,6 +100,13 @@ lualine.setup({
 		lualine_y = {},
 		lualine_z = {},
 	},
-	tabline = {},
+	tabline = {
+    lualine_a = {'buffers'},
+    lualine_b = {},
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {'tabs'}
+  },
 	extensions = {},
 })

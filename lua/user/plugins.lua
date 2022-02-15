@@ -38,7 +38,7 @@ packer.init {
 return packer.startup(function(use)
   -- plugins here
   use 'airblade/vim-gitgutter'
-  use 'akinsho/bufferline.nvim'
+  -- use 'akinsho/bufferline.nvim'
   use 'gruvbox-community/gruvbox'
   use { 'kyazdani42/nvim-tree.lua', commit="3f4ed9b6c2598ab8304186486a0" }
   use 'kyazdani42/nvim-web-devicons'
