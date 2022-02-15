@@ -6,6 +6,7 @@ require "user.nvim-tree"
 require "user.telescope"
 require "user.impatient"
 require "user.lualine"
+require "user.gitsigns"
 -- require "user.bufferline"
 require "user.treesitter"
 

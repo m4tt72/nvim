@@ -37,11 +37,10 @@ packer.init {
 
 return packer.startup(function(use)
   -- plugins here
-  use 'airblade/vim-gitgutter'
-  -- use 'akinsho/bufferline.nvim'
+  use 'dstein64/vim-startuptime'
   use 'gruvbox-community/gruvbox'
-  use { 'kyazdani42/nvim-tree.lua', commit="3f4ed9b6c2598ab8304186486a0" }
   use 'kyazdani42/nvim-web-devicons'
+  use 'lewis6991/gitsigns.nvim'
   use 'lewis6991/impatient.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-lua/popup.nvim'
@@ -51,8 +50,9 @@ return packer.startup(function(use)
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
   use 'wbthomason/packer.nvim'
-  use { 'neoclide/coc.nvim', branch = 'release' }
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+  use { 'kyazdani42/nvim-tree.lua', commit="3f4ed9b6c2598ab8304186486a0" }
+  use { 'neoclide/coc.nvim', branch = 'release' }
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
