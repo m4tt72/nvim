@@ -3,7 +3,6 @@ local options = {
   hidden = true,
   swapfile = false,
   backup = false,
-  clipboard = "unnamedplus",
   number = true,
   relativenumber = true,
   writebackup = false,

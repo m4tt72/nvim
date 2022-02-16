@@ -50,6 +50,7 @@ return packer.startup(function(use)
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
   use 'wbthomason/packer.nvim'
+  use 'dstein64/vim-startuptime'
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
   use { 'kyazdani42/nvim-tree.lua', commit="3f4ed9b6c2598ab8304186486a0" }
   use { 'neoclide/coc.nvim', branch = 'release' }
