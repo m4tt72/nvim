@@ -9,6 +9,7 @@ require "user.lualine"
 require "user.gitsigns"
 require "user.treesitter"
 require "user.terminal"
+require "user.comments"
+require "user.coc"
+require "user.autopairs"
 
-
-vim.cmd "source ~/.config/nvim/coc/config.vim"

@@ -38,7 +38,7 @@ packer.init {
 return packer.startup(function(use)
   -- plugins here
   use 'dstein64/vim-startuptime'
-  use 'gruvbox-community/gruvbox'
+  use 'ellisonleao/gruvbox.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'lewis6991/gitsigns.nvim'
   use 'lewis6991/impatient.nvim'
@@ -47,13 +47,15 @@ return packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-fzy-native.nvim'
-  use 'tpope/vim-commentary'
+  use 'numToStr/Comment.nvim'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
   use 'wbthomason/packer.nvim'
   use 'akinsho/toggleterm.nvim'
+  use 'windwp/nvim-autopairs'
+  use 'kyazdani42/nvim-tree.lua'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use { 'kyazdani42/nvim-tree.lua', commit='3f4ed9b6c2598ab8304186486a0' }
   use { 'neoclide/coc.nvim', branch = 'release' }
 
   if PACKER_BOOTSTRAP then

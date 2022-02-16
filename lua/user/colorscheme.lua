@@ -1,18 +1,17 @@
 local colorscheme = "gruvbox"
 
-local status_ok, _ = pcall(vim.cmd, "color " .. colorscheme)
+local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 
 if not status_ok then
-  vim.notify("colorscheme " .. colorscheme .. " not found!")
+  print("colorscheme " .. colorscheme .. " not found!")
 
   return
 else
+  vim.opt.termguicolors = true
+  vim.g.gruvbox_transparent_bg = 1
+
   vim.cmd [[
-    color gruvbox
-    let g:gruvbox_contrast_dark='hard'
-    autocmd vimenter * ++nested colorscheme gruvbox
-    autocmd vimenter * hi Normal ctermbg=none
-    hi ExtraWhitespace ctermbg=1 guibg=1
-    match ExtraWhitespace /\s\+$/
+    colorscheme gruvbox
+    hi Normal ctermbg=NONE guibg=NONE
   ]]
 end
