@@ -11,6 +11,7 @@ else
   vim.g.gruvbox_transparent_bg = 1
 
   vim.cmd [[
+    syntax enable
     colorscheme gruvbox
     hi Normal ctermbg=NONE guibg=NONE
   ]]
