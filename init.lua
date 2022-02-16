@@ -7,7 +7,8 @@ require "user.telescope"
 require "user.impatient"
 require "user.lualine"
 require "user.gitsigns"
--- require "user.bufferline"
 require "user.treesitter"
+require "user.terminal"
+
 
 vim.cmd "source ~/.config/nvim/coc/config.vim"

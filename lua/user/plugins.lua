@@ -46,10 +46,12 @@ return packer.startup(function(use)
   use 'nvim-lua/popup.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-telescope/telescope.nvim'
+  use 'nvim-telescope/telescope-fzy-native.nvim'
   use 'tpope/vim-commentary'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
   use 'wbthomason/packer.nvim'
+  use 'akinsho/toggleterm.nvim'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use { 'kyazdani42/nvim-tree.lua', commit='3f4ed9b6c2598ab8304186486a0' }
   use { 'neoclide/coc.nvim', branch = 'release' }
