@@ -56,6 +56,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua'
   use 'rmagatti/auto-session'
   use 'famiu/bufdelete.nvim'
+  use 'akinsho/bufferline.nvim'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use { 'neoclide/coc.nvim', branch = 'release' }
 
