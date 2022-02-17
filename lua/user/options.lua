@@ -1,5 +1,6 @@
 local options = {
   autoread = true,
+  clipboard = 'unnamedplus',
   hidden = true,
   swapfile = false,
   backup = false,
