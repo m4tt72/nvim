@@ -54,6 +54,7 @@ return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'akinsho/toggleterm.nvim'
   use 'kyazdani42/nvim-tree.lua'
+  use 'rmagatti/auto-session'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use { 'neoclide/coc.nvim', branch = 'release' }
 
