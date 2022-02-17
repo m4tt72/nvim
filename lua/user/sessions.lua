@@ -4,6 +4,6 @@ if not status_ok then
 end
 
 auto_session.setup {
-  log_level = 'info',
-  auto_session_suppress_dirs = {'~/'}
+  log_level = 'error',
+  auto_session_suppress_dirs = {'~/'},
 }

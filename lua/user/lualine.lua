@@ -79,7 +79,7 @@ lualine.setup({
 		lualine_c = { filename },
 		lualine_x = { diff, spaces, "encoding", filetype },
 		lualine_y = { location },
-		lualine_z = { },
+		lualine_z = {},
 	},
 	inactive_sections = {
 		lualine_a = {},
