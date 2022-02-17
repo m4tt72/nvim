@@ -10,6 +10,7 @@ vim.g.coc_global_extensions = {
   'coc-spell-checker',
   'coc-tsserver',
   'coc-yaml',
+  'coc-pairs'
 }
 
 vim.cmd [[ source ~/.config/nvim/lua/user/coc/config.vim ]]

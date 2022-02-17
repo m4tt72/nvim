@@ -11,5 +11,3 @@ require "user.treesitter"
 require "user.terminal"
 require "user.comments"
 require "user.coc"
-require "user.autopairs"
-

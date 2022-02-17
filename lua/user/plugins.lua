@@ -53,7 +53,6 @@ return packer.startup(function(use)
   use 'tpope/vim-surround'
   use 'wbthomason/packer.nvim'
   use 'akinsho/toggleterm.nvim'
-  use 'windwp/nvim-autopairs'
   use 'kyazdani42/nvim-tree.lua'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use { 'neoclide/coc.nvim', branch = 'release' }
