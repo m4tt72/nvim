@@ -20,7 +20,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- buffers
 keymap("n", "<leader>n", ":bn <CR>", opts)
 keymap("n", "<leader>p", ":bp <CR>", opts)
-keymap("n", "<leader>d", ":bd <CR>", opts)
+keymap("n", "<leader>d", ":Bdelete <CR>", opts)
 
 -- splits
 keymap("n", "<leader>-", ":sp <CR>", opts)
