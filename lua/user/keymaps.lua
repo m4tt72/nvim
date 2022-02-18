@@ -31,8 +31,7 @@ keymap("n", "n", "nzz", opts)
 keymap("n", "N", "Nzz", opts)
 
 -- NvimTree
-keymap("n", "<C-m>", ":NvimTreeFindFile <CR>", opts)
-keymap("n", "<C-n>", ":NvimTreeToggle <CR>", opts)
+keymap("n", "<C-n>", ":NvimTreeFindFileToggle <CR>", opts)
 
 
 -- moving lines and selection
