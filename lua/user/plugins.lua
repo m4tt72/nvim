@@ -37,20 +37,19 @@ packer.init {
 
 return packer.startup(function(use)
   -- plugins here
-  use 'dstein64/vim-startuptime'
+  use 'wbthomason/packer.nvim'
+  use 'nvim-lua/plenary.nvim'
+  use 'nvim-lua/popup.nvim'
   use 'ellisonleao/gruvbox.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'lewis6991/gitsigns.nvim'
   use 'lewis6991/impatient.nvim'
-  use 'nvim-lua/plenary.nvim'
-  use 'nvim-lua/popup.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-telescope/telescope.nvim'
   use 'numToStr/Comment.nvim'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
-  use 'wbthomason/packer.nvim'
   use 'akinsho/toggleterm.nvim'
   use 'kyazdani42/nvim-tree.lua'
   use 'rmagatti/auto-session'
@@ -59,15 +58,10 @@ return packer.startup(function(use)
   use 'lukas-reineke/indent-blankline.nvim'
   use 'p00f/nvim-ts-rainbow'
   use 'norcalli/nvim-colorizer.lua'
+  use 'nathom/filetype.nvim'
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use { 'neoclide/coc.nvim', branch = 'release' }
-  use {
-    'nathom/filetype.nvim',
-      config = function()
-        vim.g.did_load_filetypes = 1
-      end,
-    }
 
   if PACKER_BOOTSTRAP then
     require('packer').sync()
