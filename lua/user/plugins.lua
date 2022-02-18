@@ -46,7 +46,6 @@ return packer.startup(function(use)
   use 'nvim-lua/popup.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-telescope/telescope.nvim'
-  use 'nvim-telescope/telescope-fzy-native.nvim'
   use 'numToStr/Comment.nvim'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'tpope/vim-fugitive'
@@ -57,8 +56,18 @@ return packer.startup(function(use)
   use 'rmagatti/auto-session'
   use 'famiu/bufdelete.nvim'
   use 'akinsho/bufferline.nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
+  use 'p00f/nvim-ts-rainbow'
+  use 'norcalli/nvim-colorizer.lua'
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use { 'neoclide/coc.nvim', branch = 'release' }
+  use {
+    'nathom/filetype.nvim',
+      config = function()
+        vim.g.did_load_filetypes = 1
+      end,
+    }
 
   if PACKER_BOOTSTRAP then
     require('packer').sync()

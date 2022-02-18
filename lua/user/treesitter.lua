@@ -16,6 +16,11 @@ configs.setup {
     additional_vim_regex_highlighting = true,
   },
   indent = { enable = true, disable = { "" } },
+  rainbow = {
+    extended_mode = true,
+    enable = true,
+    max_file_lines = nil,
+  },
   context_commentstring = {
     enable = true,
     enable_autocmd = false,
