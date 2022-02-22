@@ -5,6 +5,7 @@ local options = {
   hidden = true,
   swapfile = false,
   backup = false,
+  mouse = "a",
   number = true,
   relativenumber = false,
   writebackup = false,
