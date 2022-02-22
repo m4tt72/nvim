@@ -55,7 +55,6 @@ return packer.startup(function(use)
   use 'rmagatti/auto-session'
   use 'famiu/bufdelete.nvim'
   use 'akinsho/bufferline.nvim'
-  use 'lukas-reineke/indent-blankline.nvim'
   use 'p00f/nvim-ts-rainbow'
   use 'norcalli/nvim-colorizer.lua'
   use 'nathom/filetype.nvim'
