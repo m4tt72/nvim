@@ -59,6 +59,7 @@ return packer.startup(function(use)
   use 'p00f/nvim-ts-rainbow'
   use 'norcalli/nvim-colorizer.lua'
   use 'nathom/filetype.nvim'
+  use 'dstein64/vim-startuptime'
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use { 'neoclide/coc.nvim', branch = 'release' }
