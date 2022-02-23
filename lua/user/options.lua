@@ -45,8 +45,6 @@ local options = {
 
 vim.opt.shortmess:append "c"
 
-vim.g.did_load_filetypes = 1
-
 -- automatically remove any trailing whitespace
 vim.cmd "autocmd BufWritePre * %s/\\s\\+$//e"
 
