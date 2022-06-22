@@ -4,25 +4,25 @@ if not status_ok then
 end
 
 configs.setup {
-  ensure_installed = "maintained",
+  ensure_installed = "all",
   sync_install = false,
-  ignore_install = { "" },
-  autopairs = {
-    enable = true,
-  },
+  ignore_install = {},
   highlight = {
     enable = true,
-    disable = { "" },
-    additional_vim_regex_highlighting = true,
-  },
-  indent = { enable = true, disable = { "" } },
-  rainbow = {
-    enable = true,
-    extended_mode = true,
-    max_file_lines = nil,
+    additional_vim_regex_highlighting = false,
   },
   context_commentstring = {
     enable = true,
     enable_autocmd = false,
   },
+  rainbow = {
+    enable = true,
+    disable = { "html" },
+    extended_mode = false,
+    max_file_lines = nil,
+  },
+  autopairs = { enable = true },
+  autotag = { enable = true },
+  incremental_selection = { enable = true },
+  indent = { enable = false },
 }
