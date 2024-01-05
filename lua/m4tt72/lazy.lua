@@ -12,5 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { import = "m4tt72.plugins" }
+  { import = "m4tt72.plugins" },
+  { import = "m4tt72.plugins.lsp"}
 })
